@@ -1,5 +1,5 @@
 {
-  "name": "app_one_helloworld",
+  "name": "app_one_helloworld_vercel_deploy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,5 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
   }
 }

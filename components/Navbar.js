@@ -1,27 +1,27 @@
+import styled from '@emotion/styled'
+import { AppBar, Stack, Toolbar, Typography } from '@mui/material'
+import Link from 'next/link'
 import React from 'react'
-import Link from 'next/link';
-import { AppBar, Stack, Toolbar, Typography } from '@mui/material';
-import styled from '@emotion/styled';
 
-const StyleToolBar=styled(Toolbar)({
-display:'flex',
-justifyContent:'space-between',
-background:'#ccffcc',
-color:'red'
-}
-)
 
+const StyledToolBar = styled(Toolbar)({
+  display:'flex',
+  justifyContent:'space-between',
+  background:'black'
+})
 const Navbar = () => {
   return (
     <AppBar position='static'>
-    <StyleToolBar>
-      <Typography variant='h5'>NextJs Portfolio</Typography>
-        <Stack direction={'row'} justifyContent={'space-between'} width={'20%'}>
-          <Link href='/' color='white'>Home</Link>
-          <Link href='/about'>About</Link>
-          <Link href='/contacts'>Contact</Link>
+      <StyledToolBar>
+        <Typography variant='h5'>
+         NEXT
+        </Typography>
+        <Stack direction='row' justifyContent='space-between' width='20%'>
+          <Link href={'/'}>HOME</Link>
+          <Link href={'/about'}>ABOUT</Link>
+          <Link href={'/nested/contacts'}>CONTACTS</Link>
         </Stack>
-    </StyleToolBar>
+      </StyledToolBar>
     </AppBar>
   )
 }

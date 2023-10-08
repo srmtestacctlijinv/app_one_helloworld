@@ -1,11 +1,11 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 
-const about = () => {
+const contacts = () => {
   return (
     <Stack spacing={5} mt={10} mb={20}>
       <Typography variant='h3'>
-       About
+       Contacts
       </Typography>
       <Typography>
       By library, we mean React provides helpful functions to build UI, but leaves it up to the developer where to use those functions in their application.
@@ -16,4 +16,4 @@ It also means, however, that building a complete React application from the grou
   )
 }
 
-export default about
+export default contacts

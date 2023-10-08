@@ -5,34 +5,27 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
-import { Box, Chip, Stack, Typography } from '@mui/material'
+import { Chip, Stack, Typography } from '@mui/material'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-    <Head>
-     <title>
-      Next Js | home 
-     </title>
-     <meta name ="keyword" contents="home"/>
-
-    </Head>
-    <Box sx={{marginBottom:20}}>
-    <Stack alignContent='center' justifyContent='center'>
-    <Image src='/1.png' width={500} height={200} marginTop={20}/>
-    <Stack alignSelf='flex-start' spacing={5} mt={10} mb={20}>
-      <Typography variant='h3'>
-        Introduction
-      </Typography>
-      <Typography color='grey'>
-    One option for sending 1,000 texts at once is to use a bulk SMS service like SimpleTexting. These services allow you to send hundreds or thousands of texts at once, which is more efficient than using a messaging platform that limits the number of messages you can send in 24 hours.
-    </Typography>
-    </Stack>
-    <Link href="/nested"><Chip label="Go to user"/></Link>
-    </Stack>
-    </Box>
+      <Stack alignItems='center' justifyContent='center'>
+        <Image src="/1.png" width={500} height={250} margintop={20} />
+        <Stack alignItems='flex-start' spacing={2} mb={20}>
+          <Typography variant='h3'>
+            Introduction
+          </Typography>
+          <Typography>
+            By library, we mean React provides helpful functions to build UI, but leaves it up to the developer where to use those functions in their application.
+            Part of React’s success is that it is relatively unopinionated about the other aspects of building applications. This has resulted in a flourishing ecosystem of third-party tools and solutions.
+            It also means, however, that building a complete React application from the ground up requires some effort. Developers need to spend time configuring tools and reinventing solutions for common application requirements.
+          </Typography>
+        </Stack>
+        <Link href={"/nested"}> <Chip label="Go to User" /></Link>
+      </Stack>
     </>
   )
 }
